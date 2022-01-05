@@ -10,8 +10,8 @@ df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
 layout = covid(df)
 save(layout)
 
-# curdoc().add_root(layout)
-# curdoc().title = "Application"
+curdoc().add_root(layout)
+curdoc().title = "Application"
 
 
-# show(curdoc)
+show(curdoc)
