@@ -13,4 +13,5 @@ layout = covid(df)
 
 # App configuration
 curdoc().add_root(layout)
+curdoc().theme = "dark_minimal"
 curdoc().title = "Kasus COVID-19 Dunia"
