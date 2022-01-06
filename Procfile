@@ -1,1 +1,1 @@
-web: bokeh serve — port=$PORT — allow-websocket-origin=kelompok-18-visdat-statistik-covid.com — address=0.0.0.0 — use-xheaders myapp.py
+web: bokeh serve — port=$PORT — allow-websocket-origin=demo-tubes-visdat.com — address=0.0.0.0 — use-xheaders myapp.py
