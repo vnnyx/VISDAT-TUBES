@@ -21,7 +21,7 @@ def covid(df):
     def daily_plot(src):
         # Membuat model plot
         p = figure(
-            plot_width=1000,
+            plot_width=1200,
             plot_height=700,
             x_axis_type="datetime",
             title="Kasus COVID-19 Harian",
@@ -34,9 +34,8 @@ def covid(df):
             source=src,
             x="date",
             y="daily_new_cases",
-            line_width=2,
-            color="firebrick",
-            line_alpha=0.5,
+            line_width=2.3,
+            color="lightskyblue",
             name="pm_line",
         )
 
@@ -63,7 +62,7 @@ def covid(df):
     def death_plot(src):
         # Membuat model plot
         p = figure(
-            plot_width=1000,
+            plot_width=1200,
             plot_height=700,
             x_axis_type="datetime",
             title="Kematian COVID-19 Harian",
@@ -76,9 +75,8 @@ def covid(df):
             source=src,
             x="date",
             y="daily_new_deaths",
-            line_width=2,
-            color="firebrick",
-            line_alpha=0.5,
+            line_width=2.3,
+            color="lightskyblue",
             name="pm_line",
         )
 
@@ -122,7 +120,7 @@ def covid(df):
     # Menambahkan color picker
     pm_line = p_daily.select_one({"name": "pm_line"})
     pm_line2 = p_death.select_one({"name": "pm_line"})
-    picker = ColorPicker(title="Line Color", color="firebrick")
+    picker = ColorPicker(title="Line Color", color="lightskyblue")
     picker.js_link("color", pm_line.glyph, "line_color")
     picker.js_link("color", pm_line2.glyph, "line_color")
 
