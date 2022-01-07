@@ -1,5 +1,3 @@
-from os import name
-from bokeh.models.annotations import Title
 from bokeh.models.layouts import Panel, Tabs
 from bokeh.plotting import figure
 from bokeh.models import (
@@ -8,7 +6,6 @@ from bokeh.models import (
     Select,
     ColorPicker,
 )
-
 from bokeh.layouts import column, row
 
 
